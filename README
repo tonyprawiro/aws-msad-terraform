@@ -1,0 +1,9 @@
+# aws-msad-terraform
+
+A proof of concept of deploying a highly available, scalable Microsoft Active Directory infrastructure in AWS using AWS Directory Services.
+
+AWS Directory Services provides the Active Directory in multiple subnets in different availability zones to achieve high availability. After the AD is deployed, we can only interact with it through a Windows machine (I call it "AD Writer") that has joined the domain.
+
+In this proof of concept, Terraform is used to orchestrate the deployment of the Active Directory and the AD Writer machine.
+
+More information at my Medium blog.

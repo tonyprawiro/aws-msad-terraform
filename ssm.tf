@@ -28,4 +28,5 @@ DOC
 resource "aws_ssm_association" "myapp_adwriter" {
 	name = "myapp_dir_default_doc"
 	instance_id = "${aws_instance.vm_adwriter.id}"
+	depends_on = ["aws_ssm_document.myapp_dir_default_doc", "aws_instance.vm_adwriter"]
 }
